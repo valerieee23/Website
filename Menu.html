@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport">
+  <link rel="stylesheet" href="Style.css">
+  <title>Retro Diners</title>
+</head>
+	<script type="text/javascript">
+	   /*
+     Amora, Jefford Adriel S.
+     Lappay, Valerie Gale D.
+     Natividad, Jose Maria M.
+     Perez, Queenie Teresita D.
+     Suarnaba, Clarence Mae L.
+     Villaverde, Ma. Gail Micah B.
+     BSIT 3
+     */
+     function Order()
+     {
+      var FullName1=FullName.value;
+      var FullNameInput = document.getElementById("FullName");
+      if (FullNameInput && FullNameInput.value) {
+      }
+      if (document.getElementById("FullName").value.length == 0) {
+      var FullName1="Not Entered";
+      }
+      localStorage.setItem("FullName2",FullName1);
+      var Address1=Address.value;
+      var AddressInput = document.getElementById("Address");
+      if (AddressInput && AddressInput.value) {
+      }
+      if (document.getElementById("Address").value.length == 0) {
+      var Address1="Not Entered";
+      }
+      localStorage.setItem("Address2",Address1);
+      var TotalPrice1=0;
+      var Tapsilog1=Tapsilog.value;
+      var TapsilogInput = document.getElementById("Tapsilog");
+      if (TapsilogInput && TapsilogInput.value) {
+      var Tapsilog2=parseInt(Tapsilog1)*150;
+      var Tapsilog3="₱"+Tapsilog2;
+      var TotalPrice1=TotalPrice1+Tapsilog2; 
+      }
+      if (document.getElementById("Tapsilog").value.length == 0) {
+      var Tapsilog3="Not Ordered";
+      }
+      localStorage.setItem("Tapsilog4",Tapsilog3);
+      var Cinnamon1=Cinnamon.value;
+      var CinnamonInput = document.getElementById("Cinnamon");
+      if (CinnamonInput && CinnamonInput.value) {
+      var Cinnamon2=parseInt(Cinnamon1)*120;
+      var Cinnamon3="₱"+Cinnamon2;
+      var TotalPrice1=TotalPrice1+Cinnamon2;
+      }
+      if (document.getElementById("Cinnamon").value.length == 0) {
+      var Cinnamon3="Not Ordered";
+      }
+      localStorage.setItem("Cinnamon4",Cinnamon3);
+      var Coffee1=Coffee.value;
+      var CoffeeInput = document.getElementById("Coffee");
+      if (CoffeeInput && CoffeeInput.value) {
+      var Coffee2=parseInt(Coffee1)*99;
+      var Coffee3="₱"+Coffee2;
+      var TotalPrice1=TotalPrice1+Coffee2; 
+      }
+      if (document.getElementById("Coffee").value.length == 0) {
+      var Coffee3="Not Ordered";
+      }
+      localStorage.setItem("Coffee4",Coffee3);
+      var Garlic1=Garlic.value;
+      var GarlicInput = document.getElementById("Garlic");
+      if (GarlicInput && GarlicInput.value) {
+      var Garlic2=parseInt(Garlic1)*450;
+      var Garlic3="₱"+Garlic2;
+      var TotalPrice1=TotalPrice1+Garlic2; 
+      }
+      if (document.getElementById("Garlic").value.length == 0) {
+      var Garlic3="Not Ordered";
+      }
+      localStorage.setItem("Garlic4",Garlic3);
+      var Beef1=Beef.value;
+      var BeefInput = document.getElementById("Beef");
+      if (BeefInput && BeefInput.value) {
+      var Beef2=parseInt(Beef1)*400;
+      var Beef3="₱"+Beef2;
+      var TotalPrice1=TotalPrice1+Beef2; 
+      }
+      if (document.getElementById("Beef").value.length == 0) {
+      var Beef3="Not Ordered";
+      }
+      localStorage.setItem("Beef4",Beef3);
+      var Chicken1=Chicken.value;
+      var ChickenInput = document.getElementById("Chicken");
+      if (ChickenInput && ChickenInput.value) {
+      var Chicken2=parseInt(Chicken1)*350;
+      var Chicken3="₱"+Chicken2;
+      var TotalPrice1=TotalPrice1+Chicken2; 
+      }
+      if (document.getElementById("Chicken").value.length == 0) {
+      var Chicken3="Not Ordered";
+      }
+      localStorage.setItem("Chicken4",Chicken3);
+      var Lemon1=Lemon.value;
+      var LemonInput = document.getElementById("Lemon");
+      if (LemonInput && LemonInput.value) {
+      var Lemon2=parseInt(Lemon1)*150;
+      var Lemon3="₱"+Lemon2;
+      var TotalPrice1=TotalPrice1+Lemon2; 
+      }
+      if (document.getElementById("Lemon").value.length == 0) {
+      var Lemon3="Not Ordered";
+      }
+      localStorage.setItem("Lemon4",Lemon3);
+      var Blue1=Blue.value;
+      var BlueInput = document.getElementById("Blue");
+      if (BlueInput && BlueInput.value) {
+      var Blue2=parseInt(Blue1)*130;
+      var Blue3="₱"+Blue2;
+      var TotalPrice1=TotalPrice1+Blue2; 
+      }
+      if (document.getElementById("Blue").value.length == 0) {
+      var Blue3="Not Ordered";
+      }
+      localStorage.setItem("Blue4",Blue3);
+      var Tomato1=Tomato.value;
+      var TomatoInput = document.getElementById("Tomato");
+      if (TomatoInput && TomatoInput.value) {
+      var Tomato2=parseInt(Tomato1)*250; 
+      var Tomato3="₱"+Tomato2;
+      var TotalPrice1=TotalPrice1+Tomato2;
+      }
+      if (document.getElementById("Tomato").value.length == 0) {
+      var KareKare3="Not Ordered";
+      }
+      localStorage.setItem("Tomato4",Tomato3);
+      var Braised1=Braised.value;
+      var BraisedInput = document.getElementById("Braised");
+      if (BraisedInput && BraisedInput.value) {
+      var Braised2=parseInt(Braised1)*350; 
+      var Braised3="₱"+Braised2;
+      var TotalPrice1=TotalPrice1+Braised2;
+      }
+      if (document.getElementById("Braised").value.length == 0) {
+      var Braised3="Not Ordered";
+      }
+      localStorage.setItem("Braised4",Braised3);
+      var Tofu1=Tofu.value;
+      var TofuInput = document.getElementById("Tofu");
+      if (TofuInput && TofuInput.value) {
+      var Tofu2=parseInt(Tofu1)*300; 
+      var Tofu3="₱"+Tofu2;
+      var TotalPrice1=TotalPrice1+Tofu2;
+      }
+      if (document.getElementById("Tofu").value.length == 0) {
+      var Tofu3="Not Ordered";
+      }
+      localStorage.setItem("Tofu4",Tofu3);
+      var Seafood1=Seafood.value;
+      var SeafoodInput = document.getElementById("Seafood");
+      if (SeafoodInput && SeafoodInput.value) {
+      var Seafood2=parseInt(Seafood1)*450; 
+      var Seafood3="₱"+Seafood2;
+      var TotalPrice1=TotalPrice1+Seafood2;
+      }
+      if (document.getElementById("Seafood").value.length == 0) {
+      var Seafood3="Not Ordered";
+      }
+      localStorage.setItem("Seafood4",Seafood3);
+      var Red1=Red.value;
+      var RedInput = document.getElementById("Red");
+      if (RedInput && RedInput.value) {
+      var Red2=parseInt(Red1)*400; 
+      var Red3="₱"+Red2;
+      var TotalPrice1=TotalPrice1+Red2;
+      }
+      if (document.getElementById("Red").value.length == 0) {
+      var Red3="Not Ordered";
+      }
+      localStorage.setItem("Red4",Red3);
+      var TotalPrice2="₱"+TotalPrice1;
+      if (TotalPrice1 == "") {
+      var TotalPrice2="Not Applicable";
+      }
+      localStorage.setItem("TotalPrice3",TotalPrice2);
+      var Payment1=Payment.value;
+      var Payment2=parseInt(Payment1);
+      var Payment3="₱"+Payment2;
+      var Change1=Payment2-TotalPrice1;
+      var Change2="₱"+Change1;
+      var PaymentInput = document.getElementById("Payment");
+      if (PaymentInput && PaymentInput.value) {
+      }
+      if (document.getElementById("Payment").value.length == 0) {
+      var Payment3="Not Entered";
+      var Change2="Not Applicable";
+      }
+      localStorage.setItem("Payment4",Payment3);
+      localStorage.setItem("Change3",Change2);
+      window.location.href="Receipt.html";
+     }
+	</script>
+  <section id="header">
+    <div class="header Perez">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#Order Now!">
+            <h1><span>Retro Diners</span></h1>
+          </a>
+        </div>
+        <div class="nav-list">
+		  <div class="JJVMCQ">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="Homepage.html" data-after="Homepage"><b>Homepage</b></a></li>
+            <li><a href="About Us.html" data-after="About Us"><b>About Us</b></a></li>
+            <li><a href="Menu.html" data-after="Menu"><b><span2>Menu</span2></b></a></li>
+            <li><a href="Contact Us.html" data-after="Contact Us"><b>Contact Us</b></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <body>
+  <section id="JJVMCQ1">
+    <div class="JJVMCQ1 Perez">
+	  	 <div class="Queenie">
+        <h1 class="section-title"><span1>Breakfast Menu</span1></h1>
+	  </div>
+	 <div class="Micah">
+      <div class="Jomarie">
+	  <img src="Tapsilog _ Garlic Rice.jpg">
+    <h1 class="user-name"><span>Tapsilog & Garlic Rice</span></h1>
+    <h2 class="user-name1"><span>₱150</span></h2>
+    <form class="order-form">
+    <input id="Tapsilog" type="text" class="order-form-text" placeholder="Enter Quantity:" autocomplete="off">
+    </form>
+	  </div>
+	  <div class="Jomarie">
+	  <img src="Cinnamon French Toast.jpg">
+    <h1 class="user-name"><span>Cinnamon French Toast</span></h1>
+    <h2 class="user-name1"><span>₱120</span></h2>
+    <form class="order-form">
+    <input id="Cinnamon" type="text" class="order-form-text" placeholder="Enter Quantity:" autocomplete="off">
+    </form>
+	  </div>
+	  <div class="Jomarie">
+	  <img src="Coffee.jpg">
+    <h1 class="user-name"><span>Coffee</span></h1>
+    <h2 class="user-name1"><span>₱99</span></h2>
+    <form class="order-form" action="Receipt.html">
+    <input id="Coffee" type="text" class="order-form-text" placeholder="Enter Quantity:" autocomplete="off">
+    </form>
+	  </div>
+	  </div>
+    </div>
+  </section>
+   <section id="JJVMCQ1">
+    <div class="JJVMCQ1 Perez">
+	  	 <div class="Queenie">
+        <h1 class="section-title"><span1>Lunch Menu 1</span1></h1>
+	  </div>
+	 <div class="Micah">
+      <div class="Jomarie">
+    <img src="Garlic Butter Grilled Shrimp _ Steak.jpg">
+    <h1 class="user-name"><span>Garlic Butter Grilled Shrimp and Steak</span></h1>
+    <h2 class="user-name1"><span>₱450</span></h2>
+    <form class="order-form">
+    <input id="Garlic" type="text" class="order-form-text" placeholder="Enter Quantity:" autocomplete="off">
+    </form>
+	  </div>
+	  <div class="Jomarie">
+    <img src="Beef Teriyaki Glazed Top Sirloin.jpg">
+    <h1 class="user-name"><span>Beef Teriyaki Glazed Top Sirloin</span></h1>
+    <h2 class="user-name1"><span>₱400</span></h2>
+    <form class="order-form">
+    <input id="Beef" type="text" class="order-form-text" placeholder="Enter Quantity:" autocomplete="off">
+    </form>
+	  </div>
+	  <div class="Jomarie">
+    <img src="Chicken Fried Steak and Gravy.jpg">
+    <h1 class="user-name"><span>Chicken Fried Steak and Gravy</span></h1>
+    <h2 class="user-name1"><span>₱350</span></h2>
+    <form class="order-form">
+    <input id="Chicken" type="text" class="order-form-text" placeholder="Enter Quantity:" autocomplete="off">
+    </form>
+	  </div>
+	  </div>
+    </div>
+  </section>
+   <section id="JJVMCQ1">
+    <div class="JJVMCQ1 Perez">
+	  	 <div class="Queenie">
+        <h1 class="section-title"><span1>Lunch Menu 2</span1></h1>
+	  </div>
+	 <div class="Micah">
+      <div class="Jomarie">
+    <img src="Lemon Iced Tea.jpg">
+    <h1 class="user-name"><span>Lemon Iced Tea</span></h1>
+    <h2 class="user-name1"><span>₱150 Per Cup</span></h2>
+    <form class="order-form">
+    <input id="Lemon" type="text" class="order-form-text" placeholder="Enter Quantity:" autocomplete="off">
+    </form>
+	  </div>
+	  <div class="Jomarie">
+    <img src="Blue Lemonade.jpg">
+    <h1 class="user-name"><span>Blue Lemonade</span></h1>
+    <h2 class="user-name1"><span>₱130</span></h2>
+    <form class="order-form">
+    <input id="Blue" type="text" class="order-form-text" placeholder="Enter Quantity:" autocomplete="off">
+    </form>
+	  </div>
+	  </div>
+    </div>
+  </section>
+     <section id="JJVMCQ1">
+    <div class="JJVMCQ1 Perez">
+	  	 <div class="Queenie">
+        <h1 class="section-title"><span1>Dinner Menu 1</span1></h1>
+	  </div>
+	 <div class="Micah">
+      <div class="Jomarie">
+    <img src="Tomato Chicken Spinach Pasta.jpg">
+    <h1 class="user-name"><span>Tomato Chicken Spinach Pasta</span></h1>
+    <h2 class="user-name1"><span>₱250</span></h2>
+    <form class="order-form">
+    <input id="Tomato" type="text" class="order-form-text" placeholder="Enter Quantity:" autocomplete="off">
+    </form>
+	  </div>
+	  <div class="Jomarie">
+    <img src="Braised Pork Belly _ Rice.jpg">
+    <h1 class="user-name"><span>Braised Pork Belly & Rice</span></h1>
+    <h2 class="user-name1"><span>₱350</span></h2>
+    <form class="order-form">
+    <input id="Braised" type="text" class="order-form-text" placeholder="Enter Quantity:" autocomplete="off">
+    </form>
+	  </div>
+	  <div class="Jomarie">
+    <img src="Tofu _ Vegetables Curry.jpg">
+    <h1 class="user-name"><span>Tofu & Vegetables Curry</span></h1>
+    <h2 class="user-name1"><span>₱300</span></h2>
+    <form class="order-form">
+    <input id="Tofu" type="text" class="order-form-text" placeholder="Enter Quantity:" autocomplete="off">
+    </form>
+	  </div>
+	  </div>
+    </div>
+  </section>
+     <section id="JJVMCQ1">
+    <div class="JJVMCQ1 Perez">
+	  	 <div class="Queenie">
+        <h1 class="section-title"><span1>Dinner Menu 2</span1></h1>
+	  </div>
+	 <div class="Micah">
+      <div class="Jomarie">
+    <img src="Seafood Paella.jpg">
+    <h1 class="user-name"><span>Seafood Paella</span></h1>
+    <h2 class="user-name1"><span>₱450</span></h2>
+    <form class="order-form">
+    <input id="Seafood" type="text" class="order-form-text" placeholder="Enter Quantity:" autocomplete="off">
+    </form>
+	  </div>
+	  <div class="Jomarie">
+    <img src="Red Wine.jpg">
+    <h1 class="user-name"><span>Red Wine</span></h1>
+    <h2 class="user-name1"><span>₱400</span></h2>
+    <form class="order-form">
+    <input id="Red" type="text" class="order-form-text" placeholder="Enter Quantity:" autocomplete="off">
+    </form>
+	  </div>
+	  </div>
+    </div>
+  </section>
+    <section id="RetroDiners">
+    <div class="Valerie">
+    <div class="RetroDiners Perez">
+      <div>
+        <h1 class="section-title"><span1>Order Now!</span1></h1>
+      </div>
+  <div class="RetroDiners-items">
+        <div class="RetroDiners-item">
+          <div class="RetroDiners-info">
+    <form class="contact-form">
+    <input id="FullName" type="text" class="contact-form-text" placeholder="Enter Full Name:" autocomplete="off">
+    <input id="Address" type="text" class="contact-form-text" placeholder="Enter Address:" autocomplete="off">
+    <input id="Payment" type="text" class="contact-form-text" placeholder="Enter Payment:" autocomplete="off">
+	</form>
+	<div class="JJVMCQ3">
+	<a href="Receipt.html">
+    <button name="order" class="button" onclick="Order();"><b>Order!</b></button>
+	</a>
+	</div>
+		 </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </body>
+  <section id="JJVMCQ2">
+    <div class="JJVMCQ2 Perez">
+      <div class="brand">
+        <h1><span>Retro Diners</span></h1>
+      </div>
+      </br>
+      <div class="left">
+      <h2>Developed By:</h2>
+      <h2>Amora, Jefford Adriel S.</h2>
+      <h2>Lappay, Valerie Gale D.</h2>
+      <h2>Natividad, Jose Maria M.</h2>
+      <h2>Perez, Queenie Teresita D.</h2>
+      <h2>Suarnaba, Clarence Mae L.</h2>
+      <h2>Villaverde, Ma. Gail Micah B.</h2>
+      </div>
+      <div class="right">
+      <h2>Copyright © 2022 BSIT 3 LCUP. All Rights Reserved</h2>
+      </div>
+    </div>
+  </section>
+</html>
